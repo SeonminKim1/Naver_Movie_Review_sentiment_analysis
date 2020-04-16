@@ -19,13 +19,13 @@
 - 모든 리뷰는 140자 미만으로 구성됨.
 - 1~10점까지의 영화 평점 중 5~8점 중립은 제외하고, 1~4 점은 부정(0), 9~10점은 긍정(1)으로 분류
 
-![Naver Sentiment movie corpus](./readme_image/Naver Sentiment movie corpus.png)
+![Naver Sentiment movie corpus](./영화기생충리뷰/readme_image/Naver Sentiment movie corpus.png)
 
 ### ○ 데이터 형태 미리보기
-![row_data](./readme_image/row_data.png)
+![row_data](./영화기생충리뷰/readme_image/row_data.png)
 - row data (평점 1점 ~ 4점 : 부정 , 9점~10점 : 긍정) -   
 
-![rating_train](./readme_image/rating_train.png)
+![rating_train](./영화기생충리뷰/readme_image/rating_train.png)
 - id, document, label(긍정, 부정)으로 분류된 기존 훈련 데이터 (ratings_trains.txt) -
 
 ### ○ 분석 작업에 필요한 데이터 형태로 전처리   
@@ -35,18 +35,18 @@
 (4) nltk(Natural Language Tool Kit) 패키지를 이용하여 토큰 데이터를 nltk.Text로 묶고 중복제거   
 (5) 크롤링을 통해 테스트 데이터 수집 (Beautiful Soup 이용)   
 
-![helminth_movie](./readme_image/helminth_movie.png)
+![helminth_movie](./영화기생충리뷰/readme_image/helminth_movie.png)
 - 네이버 영화 (기생충) 리뷰 및 평점 -
 - https://movie.naver.com/movie/point/af/list.nhn?st=mcode&sword=161967&target=after
 
-![helminth_movie_txt](./readme_image/helminth_movie_txt.png)
+![helminth_movie_txt](./영화기생충리뷰/readme_image/helminth_movie_txt.png)
 - 크롤링을 통해 자동 수집하여 생성한 helminth_movie_test.txt (영화 기생충) - 
 
 ### ○ 다양한 분석 수행   
 (1) 상위 50개의 토큰 빈도수 추출 및 plot 시각화 (실제 사용은 1000개, 3000개, 5000개)
- ![token](./readme_image/token.png)
- ![best_token](./readme_image/best_token.png)
+ ![token](./영화기생충리뷰/readme_image/token.png)
+ ![best_token](./영화기생충리뷰/readme_image/best_token.png)
  - 전체 49895개의 토큰 중 많이 나온 상위 1000개로 진행
 
 ### ○ 텐서플로우 케라스를 이용한 모델 생성
-![tf_keras](./readme_image/tf_keras.png)
+![tf_keras](./영화기생충리뷰/readme_image/tf_keras.png)

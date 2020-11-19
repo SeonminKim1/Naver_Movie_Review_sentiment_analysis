@@ -10,7 +10,7 @@
    
 ## ○ 관련 데이터 수집
 - 훈련데이터 셋 : 한국어로 된 영화 리뷰 데이터 (github 제공 : https://github.com/e9t/nsmc/ ) 
-(** 리뷰 수집방법 : http://ai.stanford.edu/~amaas/data/sentiment/ 에 의거한 Large Movie Review Dataset 방법을 사용함)
+- ** 리뷰 수집방법 : http://ai.stanford.edu/~amaas/data/sentiment/ 에 의거한 Large Movie Review Dataset 방법을 사용**
 - 테스트데이터 셋 : 영화 기생충 크롤링을 통한 영화 리뷰 및 평점 데이터 수집
    
 ## ○ 데이터 특징 

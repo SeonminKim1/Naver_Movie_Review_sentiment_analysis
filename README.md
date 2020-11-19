@@ -19,7 +19,7 @@
 - 모든 리뷰는 140자 미만으로 구성됨.
 - 1-10점까지의 영화 평점 중 5-8점 중립은 제외하고, 1-4 점은 부정(0), 9~10점은 긍정(1)으로 분류
 
-![Naver Sentiment movie corpus](./영화기생충리뷰/readme_image/Naver Sentiment movie corpus.png)
+![Naver_Sentiment_movie_corpus](./영화기생충리뷰/readme_image/Naver_Sentiment_movie_corpus.png)
    
 ## ○ 데이터 형태 미리보기
 ![row_data](./영화기생충리뷰/readme_image/row_data.png)

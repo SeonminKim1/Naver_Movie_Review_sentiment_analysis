@@ -2,7 +2,7 @@
 ## 네이버 영화 리뷰 데이터를 이용한 기생충 영화 리뷰 감성분석 (긍-부정)
 
 ## ■ 프로젝트 주제 
-- KoNLPy와 Naver Sentiment movie corpus를 이용한 한국어 영화 리뷰 감정 분석 (Feat. 영화 기생충 리뷰에 감정을 분석하여 평점과 비교해보기)
+- KoNLPy와 Naver Sentiment movie corpus를 이용한 한국어 영화 리뷰 감성 분석 (Feat. 영화 기생충 리뷰에 감성을 분석하여 평점과 비교해보기)
    
 ## ■ 프로젝트 수행 과정 
 ○ 분야 및 분석 동기(motivation) 결정
@@ -18,11 +18,12 @@
 - 직접 크롤링으로 수집한 기생충 영화의 리뷰는 100개 정도. (실제 Test Data)
 - 모든 리뷰는 140자 미만으로 구성됨.
 - 1-10점까지의 영화 평점 중 5-8점 중립은 제외하고, 1-4 점은 부정(0), 9~10점은 긍정(1)으로 분류
+
 ![Naver Sentiment movie corpus](./영화기생충리뷰/readme_image/Naver Sentiment movie corpus.png)
    
 ## ○ 데이터 형태 미리보기
 ![row_data](./영화기생충리뷰/readme_image/row_data.png)
-- row data (평점 1점 ~ 4점 : 부정 , 9점~10점 : 긍정) -   
+- row data (평점 1점 ~ 4점 : 부정 , 9점~10점 : 긍정)
 
 ![rating_train](./영화기생충리뷰/readme_image/rating_train.png)
 - id, document, label(긍정, 부정)으로 분류된 기존 훈련 데이터 (ratings_trains.txt) -
@@ -38,8 +39,10 @@
 - 네이버 영화 (기생충) 리뷰 및 평점 -
 - https://movie.naver.com/movie/point/af/list.nhn?st=mcode&sword=161967&target=after
 
+
 ![helminth_movie_txt](./영화기생충리뷰/readme_image/helminth_movie_txt.png)
-- 크롤링을 통해 자동 수집하여 생성한 helminth_movie_test.txt (영화 기생충) - 
+- 크롤링을 통해 자동 수집하여 생성한 helminth_movie_test.txt (영화 기생충)
+- 정답라벨링 학습데이터 평가방식과 동일
    
 ## ○ 다양한 분석 수행   
 (1) 상위 50개의 토큰 빈도수 추출 및 plot 시각화 (실제 사용은 1000개, 3000개, 5000개)
